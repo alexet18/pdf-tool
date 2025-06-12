@@ -3,9 +3,13 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { FormsModule } from '@angular/forms';
 
+
+// import * as pdfjsLib from 'pdfjs-dist';
+// pdfjsLib.GlobalWorkerOptions.workerSrc = 'pdf.worker.js';
+
 import * as pdfjsLib from 'pdfjs-dist'
 pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
+  "pdf.worker.min.mjs",
   import.meta.url
 ).toString()
 

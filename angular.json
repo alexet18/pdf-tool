@@ -31,7 +31,12 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              {
+                "glob": "pdf.worker.*",
+                "input": "node_modules/pdfjs-dist/build/",
+                "output": ""
+              }  
             ],
             "styles": [
               "src/styles.less"
