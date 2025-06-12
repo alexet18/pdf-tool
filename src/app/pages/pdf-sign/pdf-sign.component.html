@@ -1,0 +1,15 @@
+<div class="page-container">
+<p>Convert a pdf to image</p>
+
+<button class="upload-btn" nz-button nzType="dashed" (click)="openFileDialog()">
+      <nz-icon nzType="plus" />
+</button>
+<button *ngIf="showCanvas" class="download-btn" nz-button (click)="downloadPdf()">Download</button>
+
+<input  #nativeInput   style="display:none;" type="file" (change)="eventHandler($event)"/>
+
+<div *ngIf="showCanvas" class="canvas-container">
+<canvas style="border: 2px solid pink" id="the-canvas" paintable-canvas></canvas>
+</div>
+
+</div>
