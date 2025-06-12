@@ -1,0 +1,10 @@
+<div class="page-container">
+<p>Convert a pdf to image</p>
+
+<button class="upload-btn" nz-button nzType="dashed" (click)="openFileDialog()">
+      <nz-icon nzType="plus" />
+</button>
+
+<input  #nativeInput   style="display:none;" type="file" (change)="eventHandler($event)"/>
+<canvas style="display:none;"  id="the-canvas"></canvas>
+</div>
